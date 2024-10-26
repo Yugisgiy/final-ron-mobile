@@ -275,7 +275,7 @@ class PlayState extends MusicBeatState
 
 	var precacheList:Map<String, String> = new Map<String, String>();
 
-	var video:MP4Handler = new MP4Handler();
+	var video:FlxVideo = new FlxVideo();
 
 	var satan:BGSprite;
 	var firebg:FlxSprite;
@@ -2327,48 +2327,38 @@ class PlayState extends MusicBeatState
 		char.y += char.positionArray[1];
 	}
 
-	public function startVideo(name:String):Void {
+    public function startVideo(name:String)
+	{
 		#if VIDEOS_ALLOWED
-		var foundFile:Bool = false;
-		var fileName:String = #if MODS_ALLOWED Paths.modFolders('videos/' + name + '.' + Paths.VIDEO_EXT); #else ''; #end
+		inCutscene = true;
+
+		var filepath:String = Paths.video(name);
 		#if sys
-		if(FileSystem.exists(fileName)) {
-			foundFile = true;
-		}
+		if(!FileSystem.exists(filepath))
+		#else
+		if(!OpenFlAssets.exists(filepath))
 		#end
-
-		if(!foundFile) {
-			fileName = Paths.video(name);
-			#if sys
-			if(FileSystem.exists(fileName)) {
-			#else
-			if(OpenFlAssets.exists(fileName)) {
-			#end
-				foundFile = true;
-			}
-		}
-
-		if(foundFile) {
-			trace(fileName);
-			inCutscene = true;
-			var bg = new FlxSprite(-FlxG.width, -FlxG.height).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
-			bg.scrollFactor.set();
-			bg.cameras = [camHUD];
-			add(bg);
-
-			(new FlxVideo(fileName)).finishCallback = function() {
-				remove(bg);
-				startAndEnd();
-			};
+		{
+			FlxG.log.warn('Couldnt find video file: ' + name);
+			startAndEnd();
 			return;
 		}
-		else
+
+		var video:FlxVideo = new FlxVideo();
+		video.load(filepath);
+		video.play();
+		video.onEndReached.add(function()
 		{
-			FlxG.log.warn('Couldnt find video file: ' + fileName);
+			video.dispose();
 			startAndEnd();
-		}
-		#end
+			return;
+		}, true);
+
+		#else
+		FlxG.log.warn('Platform not supported!');
 		startAndEnd();
+		return;
+		#end
 	}
 
 	function startAndEnd()
@@ -4224,7 +4214,14 @@ var cameraTwn:FlxTween;
 				cancelMusicFadeTween();
 				if (SONG.song.toLowerCase() == 'bloodshed')
 				{
-					video.playMP4(Paths.video('bloodshed'), new PlayState(), false, false, false);
+				    video.load(Paths.video('bloodshed'));
+		video.play();
+		video.onEndReached.add(function()
+		{
+			video.dispose();
+			menus.LoadingState.loadAndSwitchState(new PlayState());
+			return;
+		}, true);
 				}
 				else
 				{
