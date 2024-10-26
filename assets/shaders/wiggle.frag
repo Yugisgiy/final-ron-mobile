@@ -1,4 +1,4 @@
-uniform float iTime;
+uniform float uTime;
 uniform float uSpeed;
 uniform float uFrequency;
 uniform float uWaveAmplitude;
