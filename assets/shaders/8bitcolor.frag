@@ -22,9 +22,9 @@ vec3 decodeColor(float a){
 void main(){
 	vec2 uv = openfl_TextureCoordv;
 	if (enablethisbitch == 1.) {
-		gl_FragColor = texture2D(bitmap,uv);
+		gl_FragColor = flixel_texture2D(bitmap,uv);
 		gl_FragColor.r = encodeColor(texture2D(bitmap,uv).rgb);
 		gl_FragColor.rgb = decodeColor(gl_FragColor.r);
 	}
-	else gl_FragColor = texture2D(bitmap,uv);
+	else gl_FragColor = flixel_texture2D(bitmap,uv);
 }
