@@ -60,20 +60,6 @@ class MusicBeatState extends FlxUIState
 		camera.setFilters([]);
 		allShaders = [];
 	}
-	
-	#if (VIDEOS_ALLOWED && windows)
-	override public function onFocus():Void
-	{
-		misc.FlxVideo.onFocus();
-		super.onFocus();
-	}
-	
-	override public function onFocusLost():Void
-	{
-		misc.FlxVideo.onFocusLost();
-		super.onFocusLost();
-	}
-	#end
 
 	override function update(elapsed:Float)
 	{
