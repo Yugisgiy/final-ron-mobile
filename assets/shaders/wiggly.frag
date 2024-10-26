@@ -1,3 +1,4 @@
+uniform float iTime;
 void main()
 {
     // Normalized pixel coordinates (from 0 to 1)
