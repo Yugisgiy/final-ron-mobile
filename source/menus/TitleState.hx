@@ -456,11 +456,8 @@ class TitleState extends MusicBeatState
 	}
 
 	function fuckyou(){
-		#if desktop
 		MusicBeatState.switchState(new menus.MainMenuState());
-		#else
-		MusicBeatState.switchState(new menus.PiracyScreen());
-		#end
+		//cnm
 	}
 
 	function createCoolText(textArray:Array<String>, ?offset:Float = 0)
