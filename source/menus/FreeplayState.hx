@@ -480,8 +480,15 @@ class FreeplayState extends MusicBeatState
 			
 			if ((songLowercase == 'trojan-virus') && !(FlxG.keys.pressed.ALT))
 			{
-				var video:misc.MP4Handler = new misc.MP4Handler();
-				video.playMP4(Paths.videoRon('trojan-virus'), new PlayState(), false, false, false);
+				var video:FlxVideo = new FlxVideo();
+				video.load(Paths.videoRon('trojan-virus'));
+		video.play();
+		video.onEndReached.add(function()
+		{
+			video.dispose();
+			LoadingState.loadAndSwitchState(new PlayState(), true);	
+			return;
+		}, true);
 			}
 			else
 				{
