@@ -1,3 +1,5 @@
+#pragma header
+
 #define color_bits vec3( 2, 2, 2 )
 #define color_values exp2( color_bits )
 #define color_rvalues (1. / color_values)
