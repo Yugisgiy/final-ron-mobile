@@ -16,6 +16,10 @@ import haxe.CallStack;
 import sys.FileSystem;
 import sys.io.File;
 import sys.io.Process;
+#if android
+import android.content.Context;
+import android.os.Build;
+#end
 import lime.app.Application;
 #if desktop
 import important.Discord.DiscordClient;
@@ -39,6 +43,11 @@ class Main extends Sprite
 	public static function main():Void
 	{
 		Lib.current.addChild(new Main());
+		#if cpp
+		cpp.NativeGc.enable(true);
+		#elseif hl
+		hl.Gc.enable(true);
+		#end
 	}
 	
     function onCrash(e:UncaughtErrorEvent):Void
@@ -59,7 +68,9 @@ class Main extends Sprite
         Sys.println(errMsg);
 
         Application.current.window.alert(errMsg, "um");
-        DiscordClient.shutdown();
+        #if desktop
+	DiscordClient.shutdown();
+	#end
         Sys.exit(1);
     }
 
@@ -67,6 +78,12 @@ class Main extends Sprite
 	{
 		super();
 
+		#if android
+		Sys.setCwd(Path.addTrailingSlash(Context.getExternalFilesDir()));
+		#elseif ios
+		Sys.setCwd(System.documentsDirectory);
+		#end
+				
 		if (stage != null)
 		{
 			init();
@@ -91,22 +108,10 @@ class Main extends Sprite
 	{
 		var data = new haxe.Http("https://github.com/FNF-CNE-Devs/CodenameEngine/blob/main/buildnumber.txt");
 		data.onData = function(d) trace(d);
-		var stageWidth:Int = Lib.current.stage.stageWidth;
-		var stageHeight:Int = Lib.current.stage.stageHeight;
-
-		if (zoom == -1)
-		{
-			var ratioX:Float = stageWidth / gameWidth;
-			var ratioY:Float = stageHeight / gameHeight;
-			zoom = Math.min(ratioX, ratioY);
-			gameWidth = Math.ceil(stageWidth / zoom);
-			gameHeight = Math.ceil(stageHeight / zoom);
-		}
 	
 		ClientPrefs.loadDefaultKeys();
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, framerate, framerate, skipSplash, startFullscreen));
 
-		#if !mobile
 		fpsVar = new FPS(10, 3, 0xFFFFFF);
 		addChild(fpsVar);
 		Lib.current.stage.align = "tl";
@@ -114,11 +119,14 @@ class Main extends Sprite
 		if(fpsVar != null) {
 			fpsVar.visible = ClientPrefs.showFPS;
 		}
-		#end
 
 		#if html5
 		FlxG.autoPause = false;
 		FlxG.mouse.visible = false;
+		#end
+
+		#if android
+		FlxG.android.preventDefaultKeys = [BACK];
 		#end
 	}
 
