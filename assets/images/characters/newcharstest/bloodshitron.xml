@@ -1,150 +1,150 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="bloodshitron.png">
-	<!-- Created with Adobe Animate version 19.2.1.408 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="down0000" x="0" y="0" width="662" height="420"/>
-	<SubTexture name="down0001" x="0" y="0" width="662" height="420"/>
-	<SubTexture name="down0002" x="662" y="0" width="662" height="420"/>
-	<SubTexture name="down0003" x="662" y="0" width="662" height="420"/>
-	<SubTexture name="down0004" x="1324" y="0" width="662" height="420"/>
-	<SubTexture name="down0005" x="1324" y="0" width="662" height="420"/>
-	<SubTexture name="eye down0000" x="1986" y="0" width="611" height="534"/>
-	<SubTexture name="eye down0001" x="1986" y="0" width="611" height="534"/>
-	<SubTexture name="eye down0002" x="2597" y="0" width="611" height="534"/>
-	<SubTexture name="eye down0003" x="2597" y="0" width="611" height="534"/>
-	<SubTexture name="eye down0004" x="3208" y="0" width="611" height="534"/>
-	<SubTexture name="eye down0005" x="3208" y="0" width="611" height="534"/>
-	<SubTexture name="eye transform spooky0000" x="0" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0001" x="0" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0002" x="770" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0003" x="770" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0004" x="1540" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0005" x="1540" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0006" x="2310" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0007" x="2310" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0008" x="3080" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0009" x="3080" y="534" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0010" x="0" y="1170" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0011" x="0" y="1170" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0012" x="770" y="1170" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0013" x="770" y="1170" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0014" x="1540" y="1170" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0015" x="1540" y="1170" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0016" x="2310" y="1170" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0017" x="2310" y="1170" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0018" x="3080" y="1170" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0019" x="0" y="1806" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0020" x="770" y="1806" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0021" x="770" y="1806" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0022" x="1540" y="1806" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0023" x="1540" y="1806" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0024" x="2310" y="1806" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0025" x="2310" y="1806" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0026" x="3080" y="1806" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0027" x="3080" y="1806" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0028" x="0" y="2442" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0029" x="0" y="2442" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0030" x="770" y="2442" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0031" x="1540" y="2442" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0032" x="2310" y="2442" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0033" x="2310" y="2442" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0034" x="3080" y="2442" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0035" x="3080" y="2442" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0036" x="0" y="3078" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0037" x="0" y="3078" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0038" x="770" y="3078" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0039" x="770" y="3078" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0040" x="1540" y="3078" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0041" x="1540" y="3078" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0042" x="2310" y="3078" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0043" x="2310" y="3078" width="770" height="636"/>
-	<SubTexture name="eye transform spooky0044" x="3080" y="3078" width="770" height="636"/>
-	<SubTexture name="eye transform back0000" x="0" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0001" x="682" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0002" x="1364" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0003" x="1364" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0004" x="2046" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0005" x="2046" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0006" x="2728" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0007" x="2728" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0008" x="3410" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0009" x="3410" y="3714" width="682" height="481"/>
-	<SubTexture name="eye transform back0010" x="0" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0011" x="0" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0012" x="682" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0013" x="682" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0014" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0015" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0016" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0017" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0018" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0019" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0020" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0021" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0022" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0023" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0024" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0025" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0026" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0027" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0028" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="eye transform back0029" x="1364" y="4195" width="682" height="481"/>
-	<SubTexture name="idle0000" x="2046" y="4195" width="438" height="477"/>
-	<SubTexture name="idle0001" x="2046" y="4195" width="438" height="477"/>
-	<SubTexture name="idle0002" x="2484" y="4195" width="438" height="477"/>
-	<SubTexture name="idle0003" x="2484" y="4195" width="438" height="477"/>
-	<SubTexture name="idle0004" x="2922" y="4195" width="438" height="477"/>
-	<SubTexture name="idle0005" x="2922" y="4195" width="438" height="477"/>
-	<SubTexture name="idle0006" x="3360" y="4195" width="438" height="477"/>
-	<SubTexture name="idle0007" x="3360" y="4195" width="438" height="477"/>
-	<SubTexture name="idle0008" x="0" y="4676" width="438" height="477"/>
-	<SubTexture name="idle0009" x="0" y="4676" width="438" height="477"/>
-	<SubTexture name="idle0010" x="0" y="4676" width="438" height="477"/>
-	<SubTexture name="idle0011" x="0" y="4676" width="438" height="477"/>
-	<SubTexture name="idle0012" x="0" y="4676" width="438" height="477"/>
-	<SubTexture name="idle0013" x="0" y="4676" width="438" height="477"/>
-	<SubTexture name="idle0014" x="0" y="4676" width="438" height="477"/>
-	<SubTexture name="idle0015" x="0" y="4676" width="438" height="477"/>
-	<SubTexture name="eye idle0000" x="438" y="4676" width="401" height="636"/>
-	<SubTexture name="eye idle0001" x="438" y="4676" width="401" height="636"/>
-	<SubTexture name="eye idle0002" x="839" y="4676" width="401" height="636"/>
-	<SubTexture name="eye idle0003" x="839" y="4676" width="401" height="636"/>
-	<SubTexture name="eye idle0004" x="1240" y="4676" width="401" height="636"/>
-	<SubTexture name="eye idle0005" x="1240" y="4676" width="401" height="636"/>
-	<SubTexture name="left0000" x="1641" y="4676" width="436" height="479"/>
-	<SubTexture name="left0001" x="1641" y="4676" width="436" height="479"/>
-	<SubTexture name="left0002" x="2077" y="4676" width="436" height="479"/>
-	<SubTexture name="left0003" x="2077" y="4676" width="436" height="479"/>
-	<SubTexture name="left0004" x="2513" y="4676" width="436" height="479"/>
-	<SubTexture name="left0005" x="2513" y="4676" width="436" height="479"/>
-	<SubTexture name="eye left0000" x="2949" y="4676" width="537" height="636"/>
-	<SubTexture name="eye left0001" x="2949" y="4676" width="537" height="636"/>
-	<SubTexture name="eye left0002" x="3486" y="4676" width="537" height="636"/>
-	<SubTexture name="eye left0003" x="3486" y="4676" width="537" height="636"/>
-	<SubTexture name="eye left0004" x="0" y="5312" width="537" height="636"/>
-	<SubTexture name="eye left0005" x="0" y="5312" width="537" height="636"/>
-	<SubTexture name="right0000" x="537" y="5312" width="470" height="484"/>
-	<SubTexture name="right0001" x="537" y="5312" width="470" height="484"/>
-	<SubTexture name="right0002" x="1007" y="5312" width="470" height="484"/>
-	<SubTexture name="right0003" x="1007" y="5312" width="470" height="484"/>
-	<SubTexture name="right0004" x="1477" y="5312" width="470" height="484"/>
-	<SubTexture name="right0005" x="1477" y="5312" width="470" height="484"/>
-	<SubTexture name="eye right0000" x="1947" y="5312" width="514" height="621"/>
-	<SubTexture name="eye right0001" x="1947" y="5312" width="514" height="621"/>
-	<SubTexture name="eye right0002" x="2461" y="5312" width="514" height="621"/>
-	<SubTexture name="eye right0003" x="2461" y="5312" width="514" height="621"/>
-	<SubTexture name="eye right0004" x="2975" y="5312" width="514" height="621"/>
-	<SubTexture name="eye right0005" x="2975" y="5312" width="514" height="621"/>
-	<SubTexture name="up0000" x="3489" y="5312" width="599" height="541"/>
-	<SubTexture name="up0001" x="3489" y="5312" width="599" height="541"/>
-	<SubTexture name="up0002" x="0" y="5948" width="599" height="541"/>
-	<SubTexture name="up0003" x="0" y="5948" width="599" height="541"/>
-	<SubTexture name="up0004" x="599" y="5948" width="599" height="541"/>
-	<SubTexture name="up0005" x="599" y="5948" width="599" height="541"/>
-	<SubTexture name="eye up0000" x="1198" y="5948" width="582" height="692"/>
-	<SubTexture name="eye up0001" x="1198" y="5948" width="582" height="692"/>
-	<SubTexture name="eye up0002" x="1780" y="5948" width="582" height="692"/>
-	<SubTexture name="eye up0003" x="1780" y="5948" width="582" height="692"/>
-	<SubTexture name="eye up0004" x="2362" y="5948" width="582" height="692"/>
-	<SubTexture name="eye up0005" x="2362" y="5948" width="582" height="692"/>
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="down0000" x="1093" y="2839" width="634" height="424" frameX="-14" frameY="2" frameWidth="662" frameHeight="420"/>
+	<SubTexture name="down0001" x="1093" y="2839" width="634" height="424" frameX="-14" frameY="2" frameWidth="662" frameHeight="420"/>
+	<SubTexture name="down0002" x="1783" y="2310" width="655" height="419" frameX="-2" frameY="-3" frameWidth="662" frameHeight="420"/>
+	<SubTexture name="down0003" x="1783" y="2310" width="655" height="419" frameX="-2" frameY="-3" frameWidth="662" frameHeight="420"/>
+	<SubTexture name="down0004" x="1329" y="1838" width="666" height="414" frameX="2" frameY="-8" frameWidth="662" frameHeight="420"/>
+	<SubTexture name="down0005" x="1329" y="1838" width="666" height="414" frameX="2" frameY="-8" frameWidth="662" frameHeight="420"/>
+	<SubTexture name="eye down0000" x="761" y="695" width="523" height="491" frameX="-25" frameY="-45" frameWidth="611" frameHeight="534"/>
+	<SubTexture name="eye down0001" x="761" y="695" width="523" height="491" frameX="-25" frameY="-45" frameWidth="611" frameHeight="534"/>
+	<SubTexture name="eye down0002" x="584" y="2310" width="606" height="504" frameX="-7" frameY="-32" frameWidth="611" frameHeight="534"/>
+	<SubTexture name="eye down0003" x="584" y="2310" width="606" height="504" frameX="-7" frameY="-32" frameWidth="611" frameHeight="534"/>
+	<SubTexture name="eye down0004" x="1894" y="1269" width="546" height="538" frameX="2" frameY="2" frameWidth="611" frameHeight="534"/>
+	<SubTexture name="eye down0005" x="1894" y="1269" width="546" height="538" frameX="2" frameY="2" frameWidth="611" frameHeight="534"/>
+	<SubTexture name="eye transform spooky0000" x="1820" y="3424" width="436" height="474" frameX="-59" frameY="-163" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0001" x="1820" y="3424" width="436" height="474" frameX="-59" frameY="-163" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0002" x="2256" y="3424" width="434" height="470" frameX="-58" frameY="-167" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0003" x="2256" y="3424" width="434" height="470" frameX="-58" frameY="-167" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0004" x="4809" y="1911" width="424" height="460" frameX="-65" frameY="-177" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0005" x="4809" y="1911" width="424" height="460" frameX="-65" frameY="-177" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0006" x="4809" y="3753" width="409" height="457" frameX="-71" frameY="-180" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0007" x="4809" y="3753" width="409" height="457" frameX="-71" frameY="-180" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0008" x="4809" y="3292" width="414" height="461" frameX="-52" frameY="-176" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0009" x="4809" y="3292" width="414" height="461" frameX="-52" frameY="-176" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0010" x="1894" y="634" width="507" height="635" frameX="2" frameY="-2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0011" x="1894" y="634" width="507" height="635" frameX="2" frameY="-2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0012" x="2477" y="1279" width="449" height="584" frameX="-14" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0013" x="2477" y="1279" width="449" height="584" frameX="-14" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0014" x="3895" y="1807" width="406" height="599" frameX="-62" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0015" x="3895" y="1807" width="406" height="599" frameX="-62" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0016" x="2477" y="640" width="429" height="639" frameX="-51" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0017" x="2477" y="640" width="429" height="639" frameX="-51" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0018" x="3895" y="584" width="440" height="584" frameX="-79" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0019" x="3895" y="0" width="440" height="584" frameX="-79" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0020" x="2976" y="0" width="514" height="599" frameX="-48" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0021" x="2976" y="0" width="514" height="599" frameX="-48" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0022" x="0" y="599" width="619" height="639" frameX="-16" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0023" x="0" y="599" width="619" height="639" frameX="-16" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0024" x="618" y="1238" width="623" height="584" frameX="-79" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0025" x="618" y="1238" width="623" height="584" frameX="-79" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0026" x="0" y="0" width="761" height="599" frameX="-11" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0027" x="0" y="0" width="761" height="599" frameX="-11" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0028" x="4335" y="488" width="356" height="639" frameX="-77" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0029" x="4335" y="488" width="356" height="639" frameX="-77" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0030" x="0" y="3898" width="365" height="584" frameX="-63" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0031" x="3490" y="2476" width="365" height="584" frameX="-63" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0032" x="3490" y="1238" width="394" height="599" frameX="-62" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0033" x="3490" y="1238" width="394" height="599" frameX="-62" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0034" x="3490" y="1837" width="363" height="639" frameX="-51" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0035" x="3490" y="1837" width="363" height="639" frameX="-51" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0036" x="4335" y="1127" width="381" height="584" frameX="-79" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0037" x="4335" y="1127" width="381" height="584" frameX="-79" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0038" x="0" y="1238" width="618" height="600" frameX="-48" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0039" x="0" y="1238" width="618" height="600" frameX="-48" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0040" x="3895" y="1168" width="391" height="639" frameX="-16" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0041" x="3895" y="1168" width="391" height="639" frameX="-16" frameY="2" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0042" x="4335" y="2194" width="373" height="584" frameX="-79" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0043" x="4335" y="2194" width="373" height="584" frameX="-79" frameY="-53" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform spooky0044" x="3895" y="2406" width="398" height="599" frameX="-11" frameY="-38" frameWidth="770" frameHeight="636"/>
+	<SubTexture name="eye transform back0000" x="0" y="1838" width="686" height="472" frameX="2" frameY="-11" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0001" x="797" y="3898" width="378" height="472" frameX="2" frameY="-11" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0002" x="0" y="4482" width="313" height="485" frameX="-42" frameY="2" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0003" x="0" y="4482" width="313" height="485" frameX="-42" frameY="2" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0004" x="2690" y="3424" width="311" height="457" frameX="-42" frameY="-26" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0005" x="2690" y="3424" width="311" height="457" frameX="-42" frameY="-26" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0006" x="686" y="1838" width="643" height="458" frameX="-41" frameY="-25" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0007" x="686" y="1838" width="643" height="458" frameX="-41" frameY="-25" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0008" x="1190" y="2310" width="593" height="471" frameX="-35" frameY="-12" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0009" x="1190" y="2310" width="593" height="471" frameX="-35" frameY="-12" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0010" x="0" y="3424" width="510" height="474" frameX="-22" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0011" x="0" y="3424" width="510" height="474" frameX="-22" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0012" x="947" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0013" x="947" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0014" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0015" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0016" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0017" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0018" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0019" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0020" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0021" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0022" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0023" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0024" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0025" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0026" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0027" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0028" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="eye transform back0029" x="510" y="3424" width="437" height="474" frameX="-21" frameY="-8" frameWidth="682" frameHeight="481"/>
+	<SubTexture name="idle0000" x="4809" y="963" width="421" height="472" frameX="-19" frameY="-6" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0001" x="4809" y="963" width="421" height="472" frameX="-19" frameY="-6" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0002" x="4809" y="1435" width="414" height="476" frameX="-23" frameY="-2" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0003" x="4809" y="1435" width="414" height="476" frameX="-23" frameY="-2" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0004" x="4809" y="0" width="428" height="480" frameX="-2" frameY="2" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0005" x="4809" y="0" width="428" height="480" frameX="-2" frameY="2" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0006" x="365" y="3898" width="432" height="476" frameX="1" frameY="-2" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0007" x="365" y="3898" width="432" height="476" frameX="1" frameY="-2" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0008" x="1384" y="3424" width="436" height="474" frameX="2" frameY="-4" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0009" x="1384" y="3424" width="436" height="474" frameX="2" frameY="-4" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0010" x="1384" y="3424" width="436" height="474" frameX="2" frameY="-4" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0011" x="1384" y="3424" width="436" height="474" frameX="2" frameY="-4" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0012" x="1384" y="3424" width="436" height="474" frameX="2" frameY="-4" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0013" x="1384" y="3424" width="436" height="474" frameX="2" frameY="-4" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0014" x="1384" y="3424" width="436" height="474" frameX="2" frameY="-4" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="idle0015" x="1384" y="3424" width="436" height="474" frameX="2" frameY="-4" frameWidth="438" frameHeight="477"/>
+	<SubTexture name="eye idle0000" x="4335" y="2778" width="365" height="585" frameX="-9" frameY="-53" frameWidth="401" frameHeight="636"/>
+	<SubTexture name="eye idle0001" x="4335" y="2778" width="365" height="585" frameX="-9" frameY="-53" frameWidth="401" frameHeight="636"/>
+	<SubTexture name="eye idle0002" x="3490" y="639" width="395" height="599" frameX="-8" frameY="-38" frameWidth="401" frameHeight="636"/>
+	<SubTexture name="eye idle0003" x="3490" y="639" width="395" height="599" frameX="-8" frameY="-38" frameWidth="401" frameHeight="636"/>
+	<SubTexture name="eye idle0004" x="3490" y="0" width="405" height="639" frameX="2" frameY="2" frameWidth="401" frameHeight="636"/>
+	<SubTexture name="eye idle0005" x="3490" y="0" width="405" height="639" frameX="2" frameY="2" frameWidth="401" frameHeight="636"/>
+	<SubTexture name="left0000" x="4809" y="480" width="414" height="483" frameX="2" frameY="2" frameWidth="436" frameHeight="479"/>
+	<SubTexture name="left0001" x="4809" y="480" width="414" height="483" frameX="2" frameY="2" frameWidth="436" frameHeight="479"/>
+	<SubTexture name="left0002" x="4809" y="2371" width="417" height="461" frameX="-14" frameY="-20" frameWidth="436" frameHeight="479"/>
+	<SubTexture name="left0003" x="4809" y="2371" width="417" height="461" frameX="-14" frameY="-20" frameWidth="436" frameHeight="479"/>
+	<SubTexture name="left0004" x="4809" y="2832" width="417" height="460" frameX="-21" frameY="-21" frameWidth="436" frameHeight="479"/>
+	<SubTexture name="left0005" x="4809" y="2832" width="417" height="460" frameX="-21" frameY="-21" frameWidth="436" frameHeight="479"/>
+	<SubTexture name="eye left0000" x="1313" y="651" width="539" height="585" frameX="2" frameY="-53" frameWidth="537" frameHeight="636"/>
+	<SubTexture name="eye left0001" x="1313" y="651" width="539" height="585" frameX="2" frameY="-53" frameWidth="537" frameHeight="636"/>
+	<SubTexture name="eye left0002" x="2976" y="1224" width="489" height="600" frameX="-48" frameY="-38" frameWidth="537" frameHeight="636"/>
+	<SubTexture name="eye left0003" x="2976" y="1224" width="489" height="600" frameX="-48" frameY="-38" frameWidth="537" frameHeight="636"/>
+	<SubTexture name="eye left0004" x="2477" y="0" width="499" height="640" frameX="-40" frameY="2" frameWidth="537" frameHeight="636"/>
+	<SubTexture name="eye left0005" x="2477" y="0" width="499" height="640" frameX="-40" frameY="2" frameWidth="537" frameHeight="636"/>
+	<SubTexture name="right0000" x="4335" y="0" width="474" height="488" frameX="2" frameY="2" frameWidth="470" frameHeight="484"/>
+	<SubTexture name="right0001" x="4335" y="0" width="474" height="488" frameX="2" frameY="2" frameWidth="470" frameHeight="484"/>
+	<SubTexture name="right0002" x="4335" y="1711" width="460" height="483" frameX="1" frameY="-3" frameWidth="470" frameHeight="484"/>
+	<SubTexture name="right0003" x="4335" y="1711" width="460" height="483" frameX="1" frameY="-3" frameWidth="470" frameHeight="484"/>
+	<SubTexture name="right0004" x="4335" y="3363" width="447" height="477" frameX="-1" frameY="-9" frameWidth="470" frameHeight="484"/>
+	<SubTexture name="right0005" x="4335" y="3363" width="447" height="477" frameX="-1" frameY="-9" frameWidth="470" frameHeight="484"/>
+	<SubTexture name="eye right0000" x="2976" y="599" width="474" height="625" frameX="-13" frameY="2" frameWidth="514" frameHeight="621"/>
+	<SubTexture name="eye right0001" x="2976" y="599" width="474" height="625" frameX="-13" frameY="2" frameWidth="514" frameHeight="621"/>
+	<SubTexture name="eye right0002" x="2976" y="1824" width="504" height="569" frameX="-12" frameY="-54" frameWidth="514" frameHeight="621"/>
+	<SubTexture name="eye right0003" x="2976" y="1824" width="504" height="569" frameX="-12" frameY="-54" frameWidth="514" frameHeight="621"/>
+	<SubTexture name="eye right0004" x="0" y="2839" width="518" height="585" frameX="2" frameY="-38" frameWidth="514" frameHeight="621"/>
+	<SubTexture name="eye right0005" x="0" y="2839" width="518" height="585" frameX="2" frameY="-38" frameWidth="514" frameHeight="621"/>
+	<SubTexture name="up0000" x="1241" y="1238" width="589" height="544" frameX="2" frameY="2" frameWidth="599" frameHeight="541"/>
+	<SubTexture name="up0001" x="1241" y="1238" width="589" height="544" frameX="2" frameY="2" frameWidth="599" frameHeight="541"/>
+	<SubTexture name="up0002" x="0" y="2310" width="584" height="529" frameX="-13" frameY="-13" frameWidth="599" frameHeight="541"/>
+	<SubTexture name="up0003" x="0" y="2310" width="584" height="529" frameX="-13" frameY="-13" frameWidth="599" frameHeight="541"/>
+	<SubTexture name="up0004" x="518" y="2839" width="575" height="506" frameX="-26" frameY="-36" frameWidth="599" frameHeight="541"/>
+	<SubTexture name="up0005" x="518" y="2839" width="575" height="506" frameX="-26" frameY="-36" frameWidth="599" frameHeight="541"/>
+	<SubTexture name="eye up0000" x="761" y="0" width="552" height="695" frameX="-11" frameY="2" frameWidth="582" frameHeight="692"/>
+	<SubTexture name="eye up0001" x="761" y="0" width="552" height="695" frameX="-11" frameY="2" frameWidth="582" frameHeight="692"/>
+	<SubTexture name="eye up0002" x="1894" y="0" width="583" height="634" frameX="-1" frameY="-59" frameWidth="582" frameHeight="692"/>
+	<SubTexture name="eye up0003" x="1894" y="0" width="583" height="634" frameX="-1" frameY="-59" frameWidth="582" frameHeight="692"/>
+	<SubTexture name="eye up0004" x="1313" y="0" width="581" height="651" frameX="2" frameY="-42" frameWidth="582" frameHeight="692"/>
+	<SubTexture name="eye up0005" x="1313" y="0" width="581" height="651" frameX="2" frameY="-42" frameWidth="582" frameHeight="692"/>
 </TextureAtlas>

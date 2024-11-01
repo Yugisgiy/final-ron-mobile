@@ -1,31 +1,33 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="dripron.png">
-<SubTexture name="dripron idle0000" x="0" y="0" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0001" x="2560" y="0" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0002" x="0" y="1440" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0003" x="2560" y="1440" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0004" x="0" y="2880" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0005" x="2560" y="2880" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0006" x="7680" y="1440" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0007" x="5120" y="4320" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0008" x="2560" y="2880" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0009" x="5120" y="1440" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0010" x="5120" y="2880" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0011" x="5120" y="4320" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0012" x="5120" y="1440" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron idle0013" x="7680" y="1440" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron down0000" x="0" y="2880" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron down0001" x="2560" y="2880" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron down0002" x="5120" y="0" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron right0000" x="5120" y="1440" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron right0001" x="5120" y="2880" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron right0002" x="0" y="4320" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron right0003" x="2560" y="4320" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron left0000" x="5120" y="4320" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron left0001" x="0" y="5760" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron left0002" x="2560" y="5760" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron left0003" x="5120" y="5760" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron up0000" x="7680" y="0" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron up0001" x="7680" y="1440" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
-<SubTexture name="dripron up0002" x="7680" y="2880" width="2560" height="1440" frameX="0" frameY="0" frameWidth="2560" frameHeight="1440" />
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="dripron idle0000" x="3294" y="1030" width="625" height="1008" frameX="-342" frameY="-429" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0001" x="2634" y="1054" width="619" height="996" frameX="-358" frameY="-440" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0002" x="653" y="2051" width="610" height="1000" frameX="-363" frameY="-436" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0003" x="3294" y="2038" width="618" height="1008" frameX="-351" frameY="-430" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0004" x="3941" y="0" width="581" height="909" frameX="-402" frameY="-526" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0005" x="2383" y="2051" width="582" height="909" frameX="-391" frameY="-527" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0006" x="3294" y="0" width="647" height="1030" frameX="-318" frameY="-408" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0007" x="0" y="1036" width="694" height="1015" frameX="-264" frameY="-423" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0008" x="2383" y="2051" width="582" height="909" frameX="-391" frameY="-527" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0009" x="694" y="1036" width="705" height="979" frameX="-437" frameY="-458" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0010" x="1399" y="1036" width="612" height="969" frameX="-436" frameY="-468" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0011" x="0" y="1036" width="694" height="1015" frameX="-264" frameY="-423" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0012" x="694" y="1036" width="705" height="979" frameX="-437" frameY="-458" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron idle0013" x="3294" y="0" width="647" height="1030" frameX="-318" frameY="-408" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron down0000" x="3941" y="0" width="581" height="909" frameX="-402" frameY="-526" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron down0001" x="2383" y="2051" width="582" height="909" frameX="-391" frameY="-527" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron down0002" x="2011" y="1036" width="587" height="923" frameX="-380" frameY="-514" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron right0000" x="694" y="1036" width="705" height="979" frameX="-437" frameY="-458" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron right0001" x="1399" y="1036" width="612" height="969" frameX="-436" frameY="-468" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron right0002" x="1829" y="2051" width="554" height="970" frameX="-422" frameY="-467" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron right0003" x="1263" y="2051" width="566" height="970" frameX="-422" frameY="-468" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron left0000" x="0" y="1036" width="694" height="1015" frameX="-264" frameY="-423" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron left0001" x="1756" y="0" width="878" height="1013" frameX="-264" frameY="-429" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron left0002" x="878" y="0" width="878" height="1033" frameX="-264" frameY="-409" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron left0003" x="0" y="0" width="878" height="1036" frameX="-264" frameY="-406" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron up0000" x="2634" y="0" width="660" height="1054" frameX="-303" frameY="-383" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron up0001" x="3294" y="0" width="647" height="1030" frameX="-318" frameY="-408" frameWidth="2560" frameHeight="1440"/>
+	<SubTexture name="dripron up0002" x="0" y="2051" width="653" height="1028" frameX="-317" frameY="-410" frameWidth="2560" frameHeight="1440"/>
 </TextureAtlas>
