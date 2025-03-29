@@ -36,6 +36,12 @@
       "url": "https://github.com/tchcfhvgd/FNF-mobile-basetools"
     },
     {
+      "name": "hxcpp",
+      "type": "git",
+      "ref": "master",
+      "url": "https://github.com/MobilePorting/hxcpp"
+    },
+    {
       "name": "flixel-addons",
       "type": "haxelib",
       "version": "3.2.1"
@@ -75,7 +81,7 @@
       "name": "linc_luajit",
       "type": "git",
       "dir": null,
-      "ref": "master",
+      "ref": "main",
       "url": "https://github.com/mcagabe19/linc_luajit-rewriten"
     },
     {
