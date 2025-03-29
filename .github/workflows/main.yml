@@ -46,7 +46,7 @@ jobs:
           haxelib setup ~/haxelib
           haxelib git hxcpp https://github.com/mcagabe19-stuff/hxcpp.git
           haxelib git lime https://github.com/Yugisgiy/lime
-          haxelib install openfl https://github.com/HomuHomu833-stuff/openfl
+          haxelib git https://github.com/Yugisgiy/openfl
           haxelib install flixel 5.5.0
           haxelib install flixel-tools
           haxelib install flixel-ui
@@ -57,7 +57,6 @@ jobs:
           haxelib install hscript
           haxelib git FNF-mobile-basetools https://github.com/tchcfhvgd/FNF-mobile-basetools
           haxelib git linc_luajit https://github.com/mcagabe19-stuff/linc_luajit-rewriten
-          haxelib install extension-androidtools
           haxelib install hxcpp-debug-server
           haxelib list
       
