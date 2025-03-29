@@ -38,7 +38,8 @@
     {
       "name": "hxcpp",
       "type": "git",
-      "ref": "master",
+      "dir": null,
+      "ref": "main",
       "url": "https://github.com/MobilePorting/hxcpp"
     },
     {
