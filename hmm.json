@@ -72,11 +72,6 @@
       "version": "1.4.0"
     },
     {
-      "name": "hscript",
-      "type": "haxelib",
-      "version": "main"
-    },
-    {
       "name": "linc_luajit",
       "type": "git",
       "dir": null,
