@@ -52,7 +52,7 @@ jobs:
           haxelib install flixel-ui 2.5.0
           haxelib install flixel-addons 3.2.1
           haxelib install tjson
-          haxelib install hxvlc 2.0.1
+          haxelib install hxvlc https://github.com/HomuHomu833-stuff/hxvlc
           haxelib install hxjsonast
           haxelib install hscript
           haxelib git FNF-mobile-basetools https://github.com/tchcfhvgd/FNF-mobile-basetools
