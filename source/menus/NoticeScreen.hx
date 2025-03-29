@@ -53,6 +53,10 @@ class NoticeScreen extends MusicBeatState
 			});
 		}
 		#end
+
+		#if mobile
+                addVirtualPad(NONE, A);
+                #end
 		
 		if (ClientPrefs.warnings)
 		{
