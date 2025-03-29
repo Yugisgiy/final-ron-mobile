@@ -41,25 +41,10 @@ jobs:
             export/release/android/obj
           key: cache-android-build
       
-      - name: Install Haxelib
+      - name: Install Libraries
         run: |
-          haxelib setup ~/haxelib
-          haxelib git hxcpp https://github.com/mcagabe19-stuff/hxcpp.git
-          haxelib git lime https://github.com/Yugisgiy/lime
-          haxelib git openfl https://github.com/Yugisgiy/openfl
-          haxelib install flixel 5.5.0
-          haxelib install flixel-tools
-          haxelib install flixel-ui 2.5.0
-          haxelib install flixel-addons 3.2.1
-          haxelib install tjson
           haxelib install hmm --quiet
           haxelib run hmm install --quiet
-          haxelib install hxjsonast
-          haxelib install hscript
-          haxelib git FNF-mobile-basetools https://github.com/tchcfhvgd/FNF-mobile-basetools
-          haxelib git linc_luajit https://github.com/mcagabe19-stuff/linc_luajit-rewriten
-          haxelib install hxcpp-debug-server
-          haxelib list
       
       - name: Setup Lime
         run: |
