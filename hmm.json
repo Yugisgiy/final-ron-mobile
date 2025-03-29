@@ -1,0 +1,11 @@
+{
+  "dependencies": [
+    {
+      "name": "hxvlc",
+      "type": "git",
+      "dir": null,
+      "ref": "main",
+      "url": "https://github.com/HomuHomu833-stuff/hxvlc"
+    }
+  ]
+}
