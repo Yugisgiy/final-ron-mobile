@@ -1,4 +1,4 @@
-package flixel.util;
+package mobile.objects;
 
 import flixel.math.FlxMath;
 import flixel.system.macros.FlxMacroUtil;
