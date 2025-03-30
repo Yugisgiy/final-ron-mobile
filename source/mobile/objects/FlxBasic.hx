@@ -55,9 +55,6 @@ class FlxBasic implements IFlxDestroyable
 	 */
 	@:noCompletion
 	var flixelType(default, null):FlxType = NONE;
-
-	@:noCompletion
-	var _cameras:Array<FlxCamera>;
 	
 	/**
 	 * The parent containing this basic, typically if you check this recursively you should reach the state
