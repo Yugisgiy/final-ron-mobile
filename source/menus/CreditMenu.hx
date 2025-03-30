@@ -74,11 +74,6 @@ class CreditMenu extends MusicBeatState {
 		add(largePortrait);
 		add(descText);
 		add(dividingBar);
-
-		#if mobile
-                addVirtualPad(UP_DOWN, A_B_C);
-                #end
-
 		super.create();
 
 		changeSelection(0);
