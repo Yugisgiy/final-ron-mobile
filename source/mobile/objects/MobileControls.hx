@@ -22,6 +22,8 @@
 
 package mobile.objects;
 
+import flixel.group.FlxSpriteGroup;
+
 // I wanted to delete this but i have no idea how i coded MobileControlSelectSubState so idk how to implement IMobileControls into it... yet...
 
 /**
