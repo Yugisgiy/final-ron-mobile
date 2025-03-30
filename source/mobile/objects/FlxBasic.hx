@@ -1,4 +1,4 @@
-package flixel;
+package mobile.objects;
 
 import flixel.group.FlxContainer;
 import flixel.util.FlxDestroyUtil;
