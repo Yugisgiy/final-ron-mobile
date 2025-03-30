@@ -1,4 +1,4 @@
-package flixel.sound;
+package mobile.objects;
 
 import flixel.FlxBasic;
 import flixel.FlxG;
