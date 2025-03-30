@@ -1,4 +1,4 @@
-package flixel.group;
+package mobile.objects;
 
 import openfl.display.BitmapData;
 import openfl.display.BlendMode;
