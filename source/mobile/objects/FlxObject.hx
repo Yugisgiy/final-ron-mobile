@@ -1,4 +1,4 @@
-package flixel;
+package mobile.objects;
 
 import openfl.display.Graphics;
 import flixel.group.FlxGroup.FlxTypedGroup;
