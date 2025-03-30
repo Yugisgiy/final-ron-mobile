@@ -137,7 +137,11 @@ class DialogueBoxRon extends FlxSpriteGroup { //same method cuz im lazy
 	}
 	var time:Float = 0;
 	override function update(elapsed:Float) {
-		if (FlxG.keys.justPressed.ANY && !STOP) 
+		var justTouched:Bool = false;
+		for (touch in FlxG.touches.list)
+			if (touch.justPressed)
+				justTouched = true;
+		if(Controls.instance.ACCEPT || justTouched) 
 			if (!finishedTyping) dialogText.skip() else nextDialogue(1);
 		super.update(elapsed);
 		time += elapsed;
