@@ -28,7 +28,7 @@ package mobile.objects;
  * ...
  * @author: Karim Akra
  */
-class MobileControls extends FlxTypedSpriteGroup<MobileInputManager>
+class MobileControls extends FlxSpriteGroup<MobileInputManager>
 {
 	public var touchPad:TouchPad = new TouchPad('NONE', 'NONE', NONE);
 	public var hitbox:Hitbox = new Hitbox(NONE);
