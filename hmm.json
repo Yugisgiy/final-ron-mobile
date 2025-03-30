@@ -19,7 +19,7 @@
       "type": "git",
       "dir": null,
       "ref": "5.5.0",
-      "url": "https://github.com/MobilePorting/flixel"
+      "url": "https://github.com/HaxeFlixel/flixel"
     },
     {
       "name": "hxCodec",
