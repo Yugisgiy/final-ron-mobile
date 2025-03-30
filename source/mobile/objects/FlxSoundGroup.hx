@@ -1,4 +1,4 @@
-package flixel.sound;
+package mobile.objects;
 
 /**
  * A way of grouping sounds for things such as collective volume control
