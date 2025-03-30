@@ -141,7 +141,7 @@ class DialogueBoxRon extends FlxSpriteGroup { //same method cuz im lazy
 		for (touch in FlxG.touches.list)
 			if (touch.justPressed)
 				justTouched = true;
-		if(Controls.instance.ACCEPT || justTouched) 
+		if(FlxG.keys.justPressed.ANY || justTouched) 
 			if (!finishedTyping) dialogText.skip() else nextDialogue(1);
 		super.update(elapsed);
 		time += elapsed;
