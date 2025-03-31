@@ -306,7 +306,8 @@ class ClientPrefs {
 			}
 			reloadControls();
 		}
-	
+
+		}
 	public static function reloadControls() }
 		PlayerSettings.player1.controls.setKeyboardScheme(KeyboardScheme.Solo);
 
