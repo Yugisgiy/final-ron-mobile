@@ -16,8 +16,6 @@ enum FlxHitboxType
 /**
  * A zone with 4 hint's (A hitbox).
  * It's really easy to customize the layout.
- *
- * @author Mihai Alexandru (M.A. Jigsaw)
  */
 class FlxHitbox extends FlxSpriteGroup
 {
