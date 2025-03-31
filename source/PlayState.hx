@@ -75,6 +75,9 @@ import flixel.addons.display.FlxBackdrop;
 #if windows
 import misc.SendWindowsNotification;
 #end
+import mobile.MobileControls;
+import mobile.utils.TouchInput;
+
 
 using StringTools;
 
