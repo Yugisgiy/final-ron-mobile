@@ -17,6 +17,8 @@ enum FlxHitboxType
  * A zone with 4 hint's (A hitbox).
  * It's really easy to customize the layout.
  */
+important.ClientPrefs();
+
 class FlxHitbox extends FlxSpriteGroup
 {
 	public var buttonLeft:FlxButton = new FlxButton(0, 0);
