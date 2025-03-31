@@ -307,9 +307,6 @@ class ClientPrefs {
 			reloadControls();
 		}
 
-		}
-	public static function reloadControls() }
-		PlayerSettings.player1.controls.setKeyboardScheme(KeyboardScheme.Solo);
 
 		menus.TitleState.muteKeys = copyKey(keyBinds.get('volume_mute'));
 		menus.TitleState.volumeDownKeys = copyKey(keyBinds.get('volume_down'));
