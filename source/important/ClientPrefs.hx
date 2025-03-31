@@ -312,7 +312,6 @@ class ClientPrefs {
 		menus.TitleState.volumeDownKeys = copyKey(keyBinds.get('volume_down'));
 		menus.TitleState.volumeUpKeys = copyKey(keyBinds.get('volume_up'));
 		FlxG.sound.muteKeys = menus.TitleState.muteKeys;
-		FlxG.sound.volumeDownKeys = menus.TitleState.volumeDownKeys;
 		FlxG.sound.volumeUpKeys = menus.TitleState.volumeUpKeys;
 	}
 	public static function copyKey(arrayToCopy:Array<FlxKey>):Array<FlxKey> {
