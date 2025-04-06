@@ -31,7 +31,6 @@ class ClientPrefs {
 	public static var noReset:Bool = false;
 	public static var healthBarAlpha:Float = 1;
 	public static var controllerMode:Bool = false;
-	public static var dodgepos:String = 'middle';
 	public static var hitsoundVolume:Float = 0;
 	public static var pauseMusic:String = 'TSTPWYPTG';
 	public static var directionalCamera:Bool = true;
@@ -137,7 +136,6 @@ class ClientPrefs {
 		FlxG.save.data.safeFrames = safeFrames;
 		FlxG.save.data.gameplaySettings = gameplaySettings;
 		FlxG.save.data.controllerMode = controllerMode;
-		FlxG.save.data.dodgepos = dodgepos;
 		FlxG.save.data.hitsoundVolume = hitsoundVolume;
 		FlxG.save.data.pauseMusic = pauseMusic;
 
@@ -255,9 +253,6 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.controllerMode != null) {
 			controllerMode = FlxG.save.data.controllerMode;
-		
-		if (FlxG.save.data.dodgepos != null) {
-			dodgepos = FlxG.save.data.dodgepos;
 		}
 		if(FlxG.save.data.hitsoundVolume != null) {
 			hitsoundVolume = FlxG.save.data.hitsoundVolume;
@@ -306,12 +301,20 @@ class ClientPrefs {
 			}
 			reloadControls();
 		}
+	}
 
+	inline public static function getGameplaySetting(name:String, defaultValue:Dynamic):Dynamic {
+		return /*PlayState.isStoryMode ? defaultValue : */ (gameplaySettings.exists(name) ? gameplaySettings.get(name) : defaultValue);
+	}
+
+	public static function reloadControls() {
+		PlayerSettings.player1.controls.setKeyboardScheme(KeyboardScheme.Solo);
 
 		menus.TitleState.muteKeys = copyKey(keyBinds.get('volume_mute'));
 		menus.TitleState.volumeDownKeys = copyKey(keyBinds.get('volume_down'));
 		menus.TitleState.volumeUpKeys = copyKey(keyBinds.get('volume_up'));
 		FlxG.sound.muteKeys = menus.TitleState.muteKeys;
+		FlxG.sound.volumeDownKeys = menus.TitleState.volumeDownKeys;
 		FlxG.sound.volumeUpKeys = menus.TitleState.volumeUpKeys;
 	}
 	public static function copyKey(arrayToCopy:Array<FlxKey>):Array<FlxKey> {
