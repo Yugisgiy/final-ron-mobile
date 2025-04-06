@@ -25,7 +25,6 @@ enum FlxDPadMode
 enum FlxActionMode
 {
 	A;
-	DODGE;
 	B;
 	A_B;
 	A_B_C;
@@ -114,8 +113,6 @@ class FlxVirtualPad extends FlxSpriteGroup
 		{
 			case A:
 				add(buttonA = createButton(FlxG.width - 132, FlxG.height - 135, 'a', 0xFF0000));
-			case DODGE:
-				add(buttonD = createButton(FlxG.width - 132, FlxG.height - 135, 'd', 0xFFD000));
 			case B:
 				add(buttonB = createButton(FlxG.width - 132, FlxG.height - 135, 'b', 0xFFCB00));
 			case A_B:
@@ -204,7 +201,7 @@ class FlxVirtualPad extends FlxSpriteGroup
 		button.immovable = true;
 		button.scrollFactor.set();
 		button.color = Color;
-		button.alpha = 0.5;
+		button.alpha = ClientPrefs.padalpha;
 		#if FLX_DEBUG
 		button.ignoreDrawDebug = true;
 		#end
