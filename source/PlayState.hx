@@ -2046,7 +2046,6 @@ class PlayState extends MusicBeatState
 		#if mobile
 		addHitbox(3);
 		#end
-		startingSong = true;
 		
 		startingSong = true;
 		if (ClientPrefs.chromaticAbberationEverywhere) {
@@ -4642,6 +4641,7 @@ var cameraTwn:FlxTween;
 				if(!daNote.playField.autoPlayed && daNote.playField.inControl && daNote.playField.playerControls){
 					if (daNote.isSustainNote && hitboxDataKeyIsPressed(daNote.noteData) && daNote.canBeHit && !daNote.tooLate && !daNote.wasGoodHit || (daNote.doAutoSustain && daNote.noteData > 4)) {
 						daNote.playField.noteHitCallback(daNote, daNote.playField);
+				}
 				}
 			});
 
