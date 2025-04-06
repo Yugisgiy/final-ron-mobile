@@ -7,6 +7,11 @@ import flixel.graphics.FlxGraphic;
 import important.Controls;
 
 class ClientPrefs {
+	//android stuff
+	public static var screensaver:Bool = false;
+	public static var controlsAlpha:Float = 0.7;
+	public static var hideHitboxHints:Bool = false;
+
 	public static var shaders:Bool = true;
 	public static var downScroll:Bool = false;
 	public static var middleScroll:Bool = false;
