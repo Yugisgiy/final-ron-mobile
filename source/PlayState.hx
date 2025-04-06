@@ -75,8 +75,6 @@ import flixel.addons.display.FlxBackdrop;
 #if windows
 import misc.SendWindowsNotification;
 #end
-import mobile.MobileControls;
-import mobile.utils.TouchInput;
 
 
 using StringTools;
@@ -2044,6 +2042,12 @@ class PlayState extends MusicBeatState
 		// UI_camera.zoom = 1;
 
 		// cameras = [FlxG.cameras.list[1]];
+
+		#if mobile
+		addHitbox(3);
+		#end
+		startingSong = true;
+		
 		startingSong = true;
 		if (ClientPrefs.chromaticAbberationEverywhere) {
 			addShader(FlxG.camera, "chromatic aberration");
@@ -4596,6 +4600,15 @@ var cameraTwn:FlxTween;
 		return -1;
 	}
 
+	private function hitboxDataKeyIsPressed(data:Int):Bool
+	{
+		if (_hitbox.array[data].pressed) 
+                {
+                        return true;
+                }
+		return false;
+	}
+
 	// Hold notes
 	private function keyShit():Void
 	{
@@ -4609,15 +4622,14 @@ var cameraTwn:FlxTween;
 		// TO DO: Find a better way to handle controller inputs, this should work for now
 		if(ClientPrefs.controllerMode)
 		{
-			var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
-			if(controlArray.contains(true))
-			{
-				for (i in 0...controlArray.length)
+			#if android
+			for (i in 0..._hitbox.array.length) {
+				if (_hitbox.array[i].justPressed)
 				{
-					if(controlArray[i])
-						onKeyPress(new KeyboardEvent(KeyboardEvent.KEY_DOWN, true, true, -1, keysArray[i][0]));
+				       onKeyPress(new KeyboardEvent(KeyboardEvent.KEY_DOWN, true, true, -1, keysArray[i][0]));
 				}
 			}
+			#end
 		}
 
 		// FlxG.watch.addQuick('asdfa', upP);
@@ -4626,10 +4638,10 @@ var cameraTwn:FlxTween;
 			// rewritten inputs???
 			notes.forEachAlive(function(daNote:Note)
 			{
-				// hold note functions
-				if (daNote.isSustainNote && controlHoldArray[daNote.noteData] && daNote.canBeHit
-				&& daNote.mustPress && !daNote.tooLate && !daNote.wasGoodHit) {
-					goodNoteHit(daNote);
+				// mobile hold note functions
+				if(!daNote.playField.autoPlayed && daNote.playField.inControl && daNote.playField.playerControls){
+					if (daNote.isSustainNote && hitboxDataKeyIsPressed(daNote.noteData) && daNote.canBeHit && !daNote.tooLate && !daNote.wasGoodHit || (daNote.doAutoSustain && daNote.noteData > 4)) {
+						daNote.playField.noteHitCallback(daNote, daNote.playField);
 				}
 			});
 
@@ -4651,15 +4663,14 @@ var cameraTwn:FlxTween;
 		// TO DO: Find a better way to handle controller inputs, this should work for now
 		if(ClientPrefs.controllerMode)
 		{
-			var controlArray:Array<Bool> = [controls.NOTE_LEFT_R, controls.NOTE_DOWN_R, controls.NOTE_UP_R, controls.NOTE_RIGHT_R];
-			if(controlArray.contains(true))
-			{
-				for (i in 0...controlArray.length)
+			#if android
+			for (i in 0..._hitbox.array.length) {
+				if (_hitbox.array[i].justReleased)
 				{
-					if(controlArray[i])
-						onKeyRelease(new KeyboardEvent(KeyboardEvent.KEY_UP, true, true, -1, keysArray[i][0]));
+				       onKeyRelease(new KeyboardEvent(KeyboardEvent.KEY_UP, true, true, -1, keysArray[i][0]));
 				}
 			}
+			#end	
 		}
 	}
 
