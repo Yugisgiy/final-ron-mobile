@@ -21,6 +21,9 @@ import sys.io.Process;
 import android.content.Context;
 import android.os.Build;
 #end
+#if mobile
+import mobile.CopyState;
+#end
 import lime.app.Application;
 #if desktop
 import important.Discord.DiscordClient;
@@ -77,13 +80,14 @@ class Main extends Sprite
 
 	public function new()
 	{
-		super();
-
+		#if mobile
 		#if android
-		Sys.setCwd(Path.addTrailingSlash(Context.getExternalFilesDir()));
-		#elseif ios
-		Sys.setCwd(System.documentsDirectory);
+		StorageUtil.requestPermissions();
 		#end
+		Sys.setCwd(StorageUtil.getStorageDirectory());
+		#end
+
+		important.CrashHandler.init();
 				
 		if (stage != null)
 		{
@@ -130,8 +134,10 @@ class Main extends Sprite
 		FlxG.mouse.visible = false;
 		#end
 
-		#if android
+		#if mobile
+		lime.system.System.allowScreenTimeout = ClientPrefs.screensaver;		#if android
 		FlxG.android.preventDefaultKeys = [BACK];
+		#end
 		#end
 	}
 
