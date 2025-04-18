@@ -7,6 +7,12 @@ import flixel.graphics.FlxGraphic;
 import important.Controls;
 
 class ClientPrefs {
+	// Mobile and Mobile Controls Releated
+	public static var extraButtons:String = "NONE"; // mobile extra button option
+	public static var hitboxPos:Bool = true; // hitbox extra button position option
+	public static var controlsAlpha:Float = FlxG.onMobile ? 0.6 : 0;
+	public static var screensaver:Bool = false;
+	public static var hitboxType:String = "Gradient";
 	public static var shaders:Bool = true;
 	public static var downScroll:Bool = false;
 	public static var middleScroll:Bool = false;
@@ -102,6 +108,11 @@ class ClientPrefs {
 	}
 
 	public static function saveSettings() {
+		FlxG.save.data.extraButtons = extraButtons;
+		FlxG.save.data.hitboxPos = hitboxPos;
+		FlxG.save.data.controlsAlpha = controlsAlpha;
+		FlxG.save.data.screensaver = screensaver;
+		FlxG.save.data.hitboxType = hitboxType;
 		FlxG.save.data.shaders = shaders;
 		FlxG.save.data.downScroll = downScroll;
 		FlxG.save.data.middleScroll = middleScroll;
@@ -156,6 +167,21 @@ class ClientPrefs {
 	}
 
 	public static function loadPrefs() {
+		if(FlxG.save.data.extraButtons != null) {
+			extraButtons = FlxG.save.data.extraButtons;
+		}
+		if(FlxG.save.data.hitboxPos != null) {
+			hitboxPos = FlxG.save.data.hitboxPos;
+		}
+		if(FlxG.save.data.controlsAlpha != null) {
+			controlsAlpha = FlxG.save.data.controlsAlpha;
+		}
+		if(FlxG.save.data.screensaver != null) {
+			screensaver = FlxG.save.data.screensaver;
+		}
+		if(FlxG.save.data.hitboxType != null) {
+			hitboxType = FlxG.save.data.hitboxType;
+		}
 		if(FlxG.save.data.shaders != null) {
 			shaders = FlxG.save.data.shaders;
 		}
