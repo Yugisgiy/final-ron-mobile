@@ -40,6 +40,8 @@ class OptionsState extends MusicBeatState
 				openSubState(new options.NotesSubState());
 			case 'Mobile Options':
 				openSubState(new mobile.options.MobileOptionsSubState());
+			case 'Mobile Select':
+				openSubState(new mobile.MobileControlSelectSubState());
 			case 'Graphics':
 				openSubState(new options.GraphicsSettingsSubState());
 			case 'Visuals and UI':
@@ -98,13 +100,13 @@ class OptionsState extends MusicBeatState
 
 		super.create();
 
-		addTouchPad("UP_DOWN", "A_B_C");
+		addTouchPad("UP_DOWN", "A_B");
 	}
 
 	override function closeSubState() {
 		super.closeSubState();
 		removeTouchPad();
-		addTouchPad("UP_DOWN", "A_B_C");
+		addTouchPad("UP_DOWN", "A_B");
 		ClientPrefs.saveSettings();
 	}
 
@@ -127,10 +129,6 @@ class OptionsState extends MusicBeatState
 			openSelectedSubstate(options[curSelected]);
 		}
 	}
-}
-			if(touchPad != null && touchPad.buttonC.justPressed) {
-			touchPad.active = touchPad.visible = persistentUpdate = false;
-			openSubState(new mobile.MobileControlSelectSubState());
 	
 	function changeSelection(change:Int = 0) {
 		curSelected += change;
