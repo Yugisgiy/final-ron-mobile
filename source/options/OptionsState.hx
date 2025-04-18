@@ -97,10 +97,14 @@ class OptionsState extends MusicBeatState
 		Shaders["chromatic aberration"].shader.data.bOffset.value = [chromeOffset * -1];
 
 		super.create();
+
+		addTouchPad("UP_DOWN", "A_B_C");
 	}
 
 	override function closeSubState() {
 		super.closeSubState();
+		removeTouchPad();
+		addTouchPad("UP_DOWN", "A_B_C");
 		ClientPrefs.saveSettings();
 	}
 
@@ -123,7 +127,14 @@ class OptionsState extends MusicBeatState
 			openSelectedSubstate(options[curSelected]);
 		}
 	}
-	
+			if (touchPad != null && touchPad.buttonC.justPressed) {
+			touchPad.active = touchPad.visible = persistentUpdate = false;
+			openSubState(new mobile.MobileControlSelectSubState());
+			}
+
+
+		}
+		
 	function changeSelection(change:Int = 0) {
 		curSelected += change;
 		if (curSelected < 0)
