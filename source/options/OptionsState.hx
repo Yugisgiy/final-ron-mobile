@@ -132,9 +132,8 @@ class OptionsState extends MusicBeatState
 			openSubState(new mobile.MobileControlSelectSubState());
 			}
 
-
-		}
-		
+	}
+	
 	function changeSelection(change:Int = 0) {
 		curSelected += change;
 		if (curSelected < 0)
