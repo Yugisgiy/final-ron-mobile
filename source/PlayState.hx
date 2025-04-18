@@ -76,6 +76,10 @@ import flixel.addons.display.FlxBackdrop;
 import misc.SendWindowsNotification;
 #end
 
+import mobile.TouchButton;
+import mobile.TouchPad;
+import mobile.input.MobileInputID;
+
 using StringTools;
 
 class PlayState extends MusicBeatState
