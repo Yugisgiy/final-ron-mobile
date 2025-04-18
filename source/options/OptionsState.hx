@@ -130,9 +130,6 @@ class OptionsState extends MusicBeatState
 			if (touchPad != null && touchPad.buttonC.justPressed) {
 			touchPad.active = touchPad.visible = persistentUpdate = false;
 			openSubState(new mobile.MobileControlSelectSubState());
-			}
-
-	}
 	
 	function changeSelection(change:Int = 0) {
 		curSelected += change;
