@@ -37,9 +37,6 @@ class FlxShader extends OriginalFlxShader
 
 		if (__context != null && program == null)
 			initGLforce();
-	}
-
-	public function initGLforce()
 	{
 		if (!custom)
 			initGood(glFragmentSource, glVertexSource);
