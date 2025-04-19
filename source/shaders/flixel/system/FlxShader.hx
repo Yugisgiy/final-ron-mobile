@@ -41,7 +41,6 @@ class FlxShader extends OriginalFlxShader
 		if (!custom)
 			initGood(glFragmentSource, glVertexSource);
 	}
-
 	public function initGood(glFragmentSource:String, glVertexSource:String)
 	{
 		@:privateAccess
