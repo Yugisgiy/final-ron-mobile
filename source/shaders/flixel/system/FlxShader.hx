@@ -19,9 +19,6 @@ class FlxShader extends OriginalFlxShader
 			this.save = save;
 
 		super();
-	}
-
-	@:noCompletion private override function __initGL():Void
 	{
 		if (__glSourceDirty || __paramBool == null)
 		{
