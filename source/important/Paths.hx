@@ -40,6 +40,7 @@ class Paths
 		'assets/music/freakyMenu.$SOUND_EXT',
 		'assets/music/breakfast.$SOUND_EXT',
 		'assets/music/tea-time.$SOUND_EXT',
+		'assets/mobile/touchpad/bg.png'
 	];
 	/// haya I love you for the base cache dump I took to the max
 	public static function clearUnusedMemory() {
