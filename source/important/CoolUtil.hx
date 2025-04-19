@@ -1,13 +1,12 @@
-package important;
+package;
 
 import flixel.FlxG;
-import important.ClientPrefs;
 import openfl.utils.Assets;
 import lime.utils.Assets as LimeAssets;
 import lime.utils.AssetLibrary;
 import lime.utils.AssetManifest;
-import flixel.sound.FlxSound;
 import flixel.util.FlxColor;
+import flixel.system.FlxSound;
 #if sys
 import sys.io.File;
 import sys.FileSystem;
@@ -17,6 +16,9 @@ import openfl.utils.Assets;
 
 using StringTools;
 
+#if cpp
+@:cppFileCode('#include <thread>')
+#end
 class CoolUtil
 {
 	public static var defaultDifficulties:Array<String> = [
@@ -28,6 +30,13 @@ class CoolUtil
 
 	public static var difficulties:Array<String> = [];
 
+	inline public static function quantize(f:Float, snap:Float){
+		// changed so this actually works lol
+		var m:Float = Math.fround(f * snap);
+		trace(snap);
+		return (m / snap);
+	}
+	
 	public static function getDifficultyFilePath(num:Null<Int> = null)
 	{
 		if(num == null) num = PlayState.storyDifficulty;
@@ -52,9 +61,7 @@ class CoolUtil
 	inline public static function boundTo(value:Float, min:Float, max:Float):Float {
 		return Math.max(min, Math.min(max, value));
 	}
-	public static function lerpFix(value:Float) {
-		return value / (60 / ClientPrefs.framerate);
-	}
+
 	public static function coolTextFile(path:String):Array<String>
 	{
 		var daList:Array<String> = [];
@@ -93,6 +100,19 @@ class CoolUtil
 
 		return daList;
 	}
+	#if linux
+	public static function sortAlphabetically(list:Array<String>):Array<String> {
+		if (list == null) return [];
+
+		list.sort((a, b) -> {
+			var upperA = a.toUpperCase();
+			var upperB = b.toUpperCase();
+			
+			return upperA < upperB ? -1 : upperA > upperB ? 1 : 0;
+		});
+		return list;
+	}
+	#end
 	public static function dominantColor(sprite:flixel.FlxSprite):Int{
 		var countByColor:Map<Int, Int> = [];
 		for(col in 0...sprite.frameWidth){
@@ -145,4 +165,23 @@ class CoolUtil
 		FlxG.openURL(site);
 		#end
 	}
+
+	public static function showPopUp(message:String, title:String):Void
+	{
+		/*#if android
+		android.Tools.showAlertDialog(title, message, {name: "OK", func: null}, null);
+		#else*/
+		FlxG.stage.window.alert(message, title);
+		//#end
+	}
+
+	#if cpp
+    @:functionCode('
+        return std::thread::hardware_concurrency();
+    ')
+	#end
+    public static function getCPUThreadsCount():Int
+    {
+        return 1;
+    }
 }
