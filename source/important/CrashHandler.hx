@@ -1,4 +1,4 @@
-package;
+package important;
 
 import openfl.events.UncaughtErrorEvent;
 import openfl.events.ErrorEvent;
