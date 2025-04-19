@@ -1,4 +1,4 @@
-package;
+package important;
 
 import flixel.FlxG;
 import openfl.utils.Assets;
@@ -61,7 +61,9 @@ class CoolUtil
 	inline public static function boundTo(value:Float, min:Float, max:Float):Float {
 		return Math.max(min, Math.min(max, value));
 	}
-
+	public static function lerpFix(value:Float) {
+		return value / (60 / ClientPrefs.framerate);
+	}
 	public static function coolTextFile(path:String):Array<String>
 	{
 		var daList:Array<String> = [];
