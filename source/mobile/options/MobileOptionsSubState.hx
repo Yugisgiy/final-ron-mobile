@@ -98,7 +98,7 @@ class MobileOptionsSubState extends BaseOptionsMenu
 	{
 		File.saveContent(lime.system.System.applicationStorageDirectory + 'storagetype.txt', ClientPrefs.storageType);
 
-		var lastStoragePath:String = important.ClientPrefs.StorageType.fromStrForce(lastStorageType) + '/';
+		var lastStoragePath:String = important.ClientPrefs.storageType.fromStrForce(lastStorageType) + '/';
 
 		try
 		{
