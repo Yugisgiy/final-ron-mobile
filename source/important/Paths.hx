@@ -318,7 +318,7 @@ class Paths
 		}
 		localTrackedAssets.push(gottenPath);
 		return currentTrackedSounds.get(gottenPath);
-
+	}
 	public static function readDirectory(directory:String):Array<String>
 	{
 		#if MODS_ALLOWED
