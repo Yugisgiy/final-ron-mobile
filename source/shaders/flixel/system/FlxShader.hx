@@ -2,8 +2,6 @@ package shaders.flixel.system;
 
 import flixel.system.FlxAssets.FlxShader as OriginalFlxShader;
 
-using StringTools;
-
 /**
  * A modded FlxShader that allows using GLSL Es 300 and GLSL 330
  * @author Mihai Alexandru (M.A. Jigsaw)
@@ -19,6 +17,9 @@ class FlxShader extends OriginalFlxShader
 			this.save = save;
 
 		super();
+	}
+
+	@:noCompletion private override function __initGL():Void
 	{
 		if (__glSourceDirty || __paramBool == null)
 		{
@@ -37,10 +38,14 @@ class FlxShader extends OriginalFlxShader
 
 		if (__context != null && program == null)
 			initGLforce();
+	}
+
+	public function initGLforce()
 	{
 		if (!custom)
 			initGood(glFragmentSource, glVertexSource);
 	}
+
 	public function initGood(glFragmentSource:String, glVertexSource:String)
 	{
 		@:privateAccess
