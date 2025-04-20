@@ -1,6 +1,5 @@
 package shaders.flixel.system;
 
-import StringTools;
 import flixel.system.FlxAssets.FlxShader as OriginalFlxShader;
 
 /**
@@ -73,7 +72,7 @@ class FlxShader extends OriginalFlxShader
 		#if lime_opengles
 		prefix += 'out vec4 output_FragColor;\n';
 		var vertex = prefix
-				glVertexSource = glVertexSource.replace("attribute", "in");
+				glVertexSource.replace("attribute", "in");
 				.replace("varying", "out")
 				.replace("texture2D", "texture")
 				.replace("gl_FragColor", "output_FragColor");
