@@ -1,5 +1,6 @@
 package shaders.flixel.system;
 
+import StringTools;
 import flixel.system.FlxAssets.FlxShader as OriginalFlxShader;
 
 /**
@@ -19,7 +20,7 @@ class FlxShader extends OriginalFlxShader
 		super();
 	}
 
-	@:noCompletion private override function __initGL():Void
+	@:noCompletion override public function __initGL():Void
 	{
 		if (__glSourceDirty || __paramBool == null)
 		{
