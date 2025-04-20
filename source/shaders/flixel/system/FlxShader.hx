@@ -73,7 +73,7 @@ class FlxShader extends OriginalFlxShader
 		#if lime_opengles
 		prefix += 'out vec4 output_FragColor;\n';
 		var vertex = prefix
-			StringTools.replace("attribute", "in";)
+			StringTools.replace("attribute"; "in")
 				.replace("varying", "out")
 				.replace("texture2D", "texture")
 				.replace("gl_FragColor", "output_FragColor");
