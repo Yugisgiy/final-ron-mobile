@@ -366,7 +366,6 @@ class PlayState extends MusicBeatState
 		healthBar.screenCenter(X);
 
 		public var luaTouchPad:TouchPad;
-
 	}
 	
 	override public function create()
