@@ -25,8 +25,8 @@
       "name": "hxcpp",
       "type": "git",
       "dir": null,
-      "ref": "master",
-      "url": "https://github.com/Moxie-Stuff/hxcpp"
+      "ref": "main",
+      "url": "https://github.com/MobilePorting/hxcpp"
     },
     {
       "name": "flixel-addons",
