@@ -38,6 +38,7 @@ import flixel.input.mouse.FlxMouseButton;
 #end
 import mobile.input.MobileInputID;
 import shaders.flixel.system.FlxShader;
+import flixel.system.FlxAssets.FlxShader;
 
 /**
  * A simple button class that calls a function when clicked by the touch.
