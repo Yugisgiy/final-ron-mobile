@@ -74,7 +74,7 @@ class FlxShader extends OriginalFlxShader
 		var vertex = prefix
 			var vertex = prefix + Std.string(glVertexSource)
 			    	.replace("attribute", "in")
-				.replace("varying", "out")
+				.replace("varying", "out");
 				.replace("texture2D", "texture")
 				.replace("gl_FragColor", "output_FragColor");
 		var fragment = prefix + Std.string(glFragmentSource);
@@ -82,8 +82,8 @@ class FlxShader extends OriginalFlxShader
 		.replace("texture2D", "texture")
 		.replace("gl_FragColor", "output_FragColor");
 		#else
-		var vertex = prefix + glVertexSource;
-		var fragment = prefix + glFragmentSource;
+		var vertex = prefix + Std.string(glVertexSource);
+		var fragment = prefix + Std.string(glFragmentSource);
 		#end
 
 		var id = vertex + fragment;
