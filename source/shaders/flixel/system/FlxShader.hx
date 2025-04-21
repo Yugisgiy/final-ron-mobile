@@ -76,7 +76,7 @@ class FlxShader extends OriginalFlxShader
 			    	.replace("attribute", "in")
 				.replace("varying", "out")
 				.replace("texture2D", "texture")
-				.replace("gl_FragColor", "output_FragColor");
+				.replace("gl_FragColor", "output_FragColor")
 		var fragment = prefix + Std.string(glFragmentSource)
 		.replace("varying", "in")
 		.replace("texture2D", "texture")
