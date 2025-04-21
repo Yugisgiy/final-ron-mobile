@@ -19,7 +19,7 @@ class FlxShader extends OriginalFlxShader
 		super();
 	}
 
-	@:noCompletion override public function __initGL():Void
+	@:noCompletion private override function __initGL():Void
 	{
 		if (__glSourceDirty || __paramBool == null)
 		{
@@ -72,13 +72,14 @@ class FlxShader extends OriginalFlxShader
 		#if lime_opengles
 		prefix += 'out vec4 output_FragColor;\n';
 		var vertex = prefix
-				var glVertexSource = "glFragmentSource";glVertexSource.replace("attribute", "in");
+			+ glVertexSource.replace("attribute", "in")
 				.replace("varying", "out")
 				.replace("texture2D", "texture")
 				.replace("gl_FragColor", "output_FragColor");
-		var fragment = prefix glFragmentSource.replace("varying", "in").replace("texture2D", "texture").replace("gl_FragColor", "output_FragColor")
-		var vertex = prefix glVertexSource;
-		var fragment = prefix glFragmentSource;
+		var fragment = prefix + glFragmentSource.replace("varying", "in").replace("texture2D", "texture").replace("gl_FragColor", "output_FragColor");
+		#else
+		var vertex = prefix + glVertexSource;
+		var fragment = prefix + glFragmentSource;
 		#end
 
 		var id = vertex + fragment;
