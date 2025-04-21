@@ -97,7 +97,6 @@ class DesktopMenu extends MusicBeatState
  				}
 				if (curClicked == i) {
 					clickAmounts++;
-					button.color = 0xFF485EC2;
 					if (clickAmounts == 2) {
 						if (icons[i] == "story mode is idiot") {
 							if (transitioningStory) {return;}
