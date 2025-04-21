@@ -365,6 +365,8 @@ class PlayState extends MusicBeatState
 		healthBar.updateHitbox();
 		healthBar.screenCenter(X);
 
+	{
+
 		public var luaTouchPad:TouchPad;
 	}
 	
