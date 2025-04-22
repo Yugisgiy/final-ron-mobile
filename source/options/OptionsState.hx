@@ -99,8 +99,6 @@ class OptionsState extends MusicBeatState
 		Shaders["chromatic aberration"].shader.data.bOffset.value = [chromeOffset * -1];
 
 		super.create();
-
-		addTouchPad("UP_DOWN", "A_B");
 	}
 
 	override function closeSubState() {
