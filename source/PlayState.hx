@@ -332,6 +332,8 @@ class PlayState extends MusicBeatState
 	public var camOverlay:FlxCamera;
 	public var camBg:FlxCamera;
 
+	public var luaTouchPad:TouchPad;
+
 	var WHATTHEFUCK:Bool = false;
 	var WTFending:Bool = false;
 	var intensecameramove:Bool = false;
@@ -364,8 +366,7 @@ class PlayState extends MusicBeatState
 		healthBar.setGraphicSize(800,Std.int(healthBar.height));
 		healthBar.updateHitbox();
 		healthBar.screenCenter(X);
-
-		public var luaTouchPad:TouchPad; }
+	}
 	
 	override public function create()
 	{
