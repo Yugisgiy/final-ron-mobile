@@ -79,7 +79,6 @@ import misc.SendWindowsNotification;
 import mobile.TouchButton;
 import mobile.TouchPad;
 import mobile.input.MobileInputID;
-import mobile.MobileControls;
 
 using StringTools;
 
@@ -1818,9 +1817,6 @@ class PlayState extends MusicBeatState
 		addTouchPadCamera();
 		touchPad.visible = true;
 		#end
-		addMobileControls();
-		mobileControls.onButtonDown.add(onButtonPress);
-		mobileControls.onButtonUp.add(onButtonRelease);
 
 		generateSong(SONG.song);
 		noteTypeMap.clear();
@@ -6953,7 +6949,6 @@ var cameraTwn:FlxTween;
 			variables.set("luaTouchPad", luaTouchPad);
 
 		luaTouchPad = new TouchPad(DPadMode, ActionMode, NONE);
-		luaTouchPad.alpha = ClientPrefs.controlsAlpha;
 	}
 	
 	public function addLuaTouchPad() {
