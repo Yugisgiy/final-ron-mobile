@@ -79,6 +79,7 @@ import misc.SendWindowsNotification;
 import mobile.TouchButton;
 import mobile.TouchPad;
 import mobile.input.MobileInputID;
+import mobile.input.MobileInputManager;
 
 using StringTools;
 
