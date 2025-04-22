@@ -6945,9 +6945,6 @@ var cameraTwn:FlxTween;
 	public function makeLuaTouchPad(DPadMode:String, ActionMode:String) {
 		if(members.contains(luaTouchPad)) return;
 
-		if(!variables.exists("luaTouchPad"))
-			variables.set("luaTouchPad", luaTouchPad);
-
 		luaTouchPad = new TouchPad(DPadMode, ActionMode, NONE);
 	}
 	
