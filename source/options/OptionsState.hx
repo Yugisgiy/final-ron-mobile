@@ -103,8 +103,6 @@ class OptionsState extends MusicBeatState
 
 	override function closeSubState() {
 		super.closeSubState();
-		removeTouchPad();
-		addTouchPad("UP_DOWN", "A_B");
 		ClientPrefs.saveSettings();
 	}
 
